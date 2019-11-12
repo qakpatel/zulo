@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href=""><img src="images/zulo.png" alt="Logo" style="width:66px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./home.html" tabindex="1">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movies.html" tabindex="1">MOVIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./series.html" tabindex="1">SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./list.html" tabindex="1">LIST</a>
+                    </li>
+                    <li>
+                     <i class="fa fa-search top-padding" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-bell top-padding" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <button class="btn-logout">logout <img src="./images/Mask Group 646.svg" alt="" width="14px" height="14px"></button>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+<!--======================================================= End navbar ====================================================--> 
+    
+    <!-- <div class="movies-box">
+        <div class="details-class">
+          <img src="./images/name.jpg"  class="movie-name" alt="name" width="200px" height="200px">
+         <ul class="list-inline">
+             <li class="list-inline-item"><span class="fa fa-star checked" style="padding: 5px;"></span>8.3</li>
+             <li class="list-inline-item">1H 48M</li>
+             <li class="list-inline-item">ENGLISH</li>
+             <li class="list-inline-item">1 SEASON</li>
+         </ul>
+         <p class="movie-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis sed temporibus necessitatibus voluptas vero neque quasi quas ullam incidunt. Numquam adipisci fuga sint nesciunt, similique laboriosam esse ad assumenda?</p>
+         <span class="info"> <i class="fa fa-info-circle"></i>More Information</span><br/>
+         <ul class="list-inline">
+                <li class="list-inline-item play"><i class="fa fa-play-circle fa-3x play play-icon" aria-hidden="true"></i></li>
+                <li class="list-inline-item play"><span style="font-size: 40px;">|</span></li>
+                <li class="list-inline-item play info"> <i class="fa fa-check-circle" aria-hidden="true"></i> Add to List</li>
+          </ul>
+        </div>
+     </div> -->
+  <div class="search-space"></div>
+<div>
+ <span class="zulo-search">zulo <span class="pic arrow-right"></span><span class="screen"> List</span></span>
+ <div class="genres"><select><option disabled selected>Genres</option>
+    <option disabled>Action</option>
+    <option disabled>Fantasy</option>
+    <option disabled>Adventure</option>
+</select>
+</div>
+</div>
+ <div class="space"></div>
+<!------ Trending Now ---------->
+<span class="title list recent">My List</span>
+<div class="container">
+	<div class="row">
+		<div class="MultiCarousel" data-items="2.6,2.9,3.9,4.8" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                        <img src="./images/kabir.jpg" class="images" alt="" >
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="./images/total.jpg" class="images" alt="" >
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="./images/mulk.jpg" class="images" alt="" >
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="./images/airlift.jpg" class="images" alt="" >
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="./images/chhichhore.jpg" class="images" alt="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+             
+     <section class="footer">
+            <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="footericons col-xs-12 col-sm-3 col-md-3">
+            
+            <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>General</h5>
+            <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();">Pricing</a></li>
+            <li><a href="javascript:void();">About Us</a></li>
+            <li><a href="javascript:void();">Terms and Conditions</a></li>
+            <li><a href="javascript:void();">Privacy Policy</a></li>
+            </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+            <h5>Category</h5>
+            <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();">Movies</a></li>
+            <li><a href="javascript:void();">Series</a></li>
+            <li><a href="javascript:void();">Sports</a></li>
+            <li><a href="javascript:void();">More</a></li>
+            </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+            
+            <ul class="list-unstyled quick-links">
+            <li><img src="images/zulo.png" class="footer"></li>
+            <li class="num"><a href="javascript:void();" class="num"><p class="num">1800-3000-1541</p></a></li>
+            <li><a href="javascript:void();" class="mail"><p class="mail"></p><i class="fa fa-envelope"></i>info@clynkmedia.com</p></a></li>
+            
+            </ul>
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            
+            <p class="h6">Copyright Zulo 2019</p>
+            </div>
+            </hr>
+            </div>	
+            </div>
+            </section>
+
+  <script>
+  $(document).ready(function () {
+    var itemsMainDiv = ('.MultiCarousel');
+    var itemsDiv = ('.MultiCarousel-inner');
+    var itemWidth = "";
+
+    $('.leftLst, .rightLst').click(function () {
+        var condition = $(this).hasClass("leftLst");
+        if (condition)
+            click(0, this);
+        else
+            click(1, this)
+    });
+
+    ResCarouselSize();
+
+
+
+
+    $(window).resize(function () {
+        ResCarouselSize();
+    });
+
+    //this function define the size of the items
+    function ResCarouselSize() {
+        var incno = 0;
+        var dataItems = ("data-items");
+        var itemClass = ('.item');
+        var id = 0;
+        var btnParentSb = '';
+        var itemsSplit = '';
+        var sampwidth = $(itemsMainDiv).width();
+        var bodyWidth = $('body').width();
+        $(itemsDiv).each(function () {
+            id = id + 1;
+            var itemNumbers = $(this).find(itemClass).length;
+            btnParentSb = $(this).parent().attr(dataItems);
+            itemsSplit = btnParentSb.split(',');
+            $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+            if (bodyWidth >= 1200) {
+                incno = itemsSplit[3];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 992) {
+                incno = itemsSplit[2];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 768) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
+            else {
+                incno = itemsSplit[0];
+                itemWidth = sampwidth / incno;
+            }
+            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).find(itemClass).each(function () {
+                $(this).outerWidth(itemWidth);
+            });
+
+            $(".leftLst").addClass("over");
+            $(".rightLst").removeClass("over");
+
+        });
+    }
+
+
+    //this function used to move the items
+    function ResCarousel(e, el, s) {
+        var leftBtn = ('.leftLst');
+        var rightBtn = ('.rightLst');
+        var translateXval = '';
+        var divStyle = $(el + ' ' + itemsDiv).css('transform');
+        var values = divStyle.match(/-?[\d\.]+/g);
+        var xds = Math.abs(values[4]);
+        if (e == 0) {
+            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            $(el + ' ' + rightBtn).removeClass("over");
+
+            if (translateXval <= itemWidth / 2) {
+                translateXval = 0;
+                $(el + ' ' + leftBtn).addClass("over");
+            }
+        }
+        else if (e == 1) {
+            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            $(el + ' ' + leftBtn).removeClass("over");
+
+            if (translateXval >= itemsCondition - itemWidth / 2) {
+                translateXval = itemsCondition;
+                $(el + ' ' + rightBtn).addClass("over");
+            }
+        }
+        $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+    }
+
+    //It is used to get some elements from btn
+    function click(ell, ee) {
+        var Parent = "#" + $(ee).parent().attr("id");
+        var slide = $(Parent).attr("data-slide");
+        ResCarousel(ell, Parent, slide);
+    }
+
+});
+  </script>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
