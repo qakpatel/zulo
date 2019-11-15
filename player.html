@@ -7,29 +7,69 @@
     <title>Player</title>
     <link rel="stylesheet" type="text/css" href="css/player.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <div class='player-container'>
         <div class='player'>
-        <video id='video' src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4' autoplay playsinline></video>
+            <iframe id="video" class="phandoIframeCl" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="100%" height="480" src="https://paperscoreruat.phando.com/media/watch/5cab266982fc5?&output=embed" frameborder="0" ></iframe>
+        <!-- <video id='video' src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' autoplay playsinline></video> -->
         <div class="navss"> 
         <div class="video-title">
-               <img src="./images/svg/left_arrow.svg" alt="">
-              <div class="title"><span>Zero</span></div>
+               <img class="back-button" src="./images/svg/left_arrow.svg" alt="">
+              <div class="title"><span>Sental</span></div>
         </div>
         <div class="video-information">
-                <div class="information"> <img src="./images/svg/Mask Group 610.svg" alt="" width="12px" height="12px">
+                <div class="information"> <img src="./images/svg/Mask Group 610.svg" alt="" width="11px" height="11px">
                     <div class="info"><span class="more">More Information</span></div>
                    </div>
                    <div class="add-to-list">
-                       <img src="./images/Mask Group 609.svg" alt=""  width="12px" height="12px">
+                       <img src="./images/Mask Group 609.svg" alt=""  width="11px" height="11px">
                        <div class="add"><span class="more">Add to List</span></div>
                    </div>
         </div>
     </div>          
-   
-           <div class='play-btn-big'></div>
-            <div class='controls'>
+           <!-- <div class="movie-information">
+               <div class="cast-info">
+                   <span>Cast</span>
+                   <ul>
+                       <li>Shah Rukh Khan</li>
+                       <li>Katrina Kaif</li>
+                       <li>Anushka Sharma</li>
+                   </ul>
+               </div>
+               <div class="director-info">
+                   <span>Director</span>
+                   <p >Anand Rai</p>
+               </div>
+               <div class="movie-rating">
+                <ul >
+                        <li><span class="fa fa-star checked" style="padding: 5px;"></span>8.3</li>
+                        <li>1H 48M</li>
+                        <li>ENGLISH</li>
+                        <li>1 SEASON</li>
+                    </ul>
+                    </div>
+                    <p class="movie-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis sed temporibus necessitatibus voluptas vero neque quasi quas ullam incidunt. Numquam adipisci fuga sint nesciunt, similique laboriosam esse ad assumenda?</p>
+                    <div>
+                        <span>Trailers & More</span>
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./images/component.png" class="images">
+                                      </div>
+                                      <div class="col-3">
+                                        <img src="./images/Untitled-3bengali_3.png" class="images">
+                                      </div>
+                                      <div class="col-3">
+                                        <img src="./images/Untitled-3punjabi_3@2x.png" class="images">
+                                      </div> 
+                                </div>
+                                </div>
+                    </div>
+           </div> -->
+           <!-- <div class='play-btn-big'></div> -->
+            <!-- <div class='controls'>
                 <div class="time"><span class="time-current"></span><span class="time-total"></span></div>
                 <div class='progress'>
                        
@@ -39,20 +79,11 @@
                     <div class='controls-left'>
                         
                     </div>
-                    <img src="./images/svg/Mask Group 643.svg" alt="" width="24px" height="24px" style="padding: 10px;">
+                    <img class="backward" src="./images/svg/Mask Group 643.svg" alt="" width="24px" height="24px" style="padding: 10px;">
                     <div class='play-btn paused'></div>
-                    <img src="./images/svg/Mask Group 642.svg" alt="" width="24px" height="24px" style="padding: 10px;">
+                    <img class="forward" src="./images/svg/Mask Group 642.svg" alt="" width="24px" height="24px" style="padding: 10px;">
                     <div class="controls-right">
-                        <!-- <div class='speed'>
-                            <ul class='speed-list'>
-                                <li class='speed-item' data-speed='0.5'>0.5x</li>
-                                <li class='speed-item' data-speed='0.75'>0.75x</li>
-                                <li class='speed-item' data-speed='1' class='active'>1x</li>
-                                <li class='speed-item' data-speed='1.5'>1.5x</li>
-                                <li class='speed-item' data-speed='2'>2x</li>
-                            </ul>
-                        </div> -->
-                        <div class='volume' style="padding-right:10px;">
+                        <div class='volume' style="padding-right:17px;">
                             <div class='volume-btn loud'>
                                 <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.75497 17.6928H2C0.89543 17.6928 0 16.7973 0 15.6928V8.30611C0 7.20152 0.895431 6.30611 2 6.30611H6.75504L13.9555 0.237289C14.6058 -0.310807 15.6 0.151473 15.6 1.00191V22.997C15.6 23.8475 14.6058 24.3098 13.9555 23.7617L6.75497 17.6928Z" transform="translate(0 0.000518799)" fill="white"/>
@@ -67,6 +98,7 @@
                                 <div class='volume-filled'></div>
                             </div>
                         </div>
+                        <img class="subtitle" src="./images/svg/Mask Group 645.svg" alt="" width="30px" height="30px" style="padding-right:10px;">
                         <div class='fullscreen'>
                             <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0V-1.5H-1.5V0H0ZM0 18H-1.5V19.5H0V18ZM26 18V19.5H27.5V18H26ZM26 0H27.5V-1.5H26V0ZM1.5 6.54545V0H-1.5V6.54545H1.5ZM0 1.5H10.1111V-1.5H0V1.5ZM-1.5 11.4545V18H1.5V11.4545H-1.5ZM0 19.5H10.1111V16.5H0V19.5ZM24.5 11.4545V18H27.5V11.4545H24.5ZM26 16.5H15.8889V19.5H26V16.5ZM27.5 6.54545V0H24.5V6.54545H27.5ZM26 -1.5H15.8889V1.5H26V-1.5Z" transform="translate(2 2)" fill="white"/>
@@ -78,7 +110,7 @@
         </div>
                     </div>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     <script src="./js/player.js"></script>

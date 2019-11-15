@@ -2983,14 +2983,6 @@
 	right: 0px;
 	bottom: 0px;
 }
-html{
-	min-width: 100vh !important;
-	min-height: 100vh !important;
-}
-body{
-	min-width: 100vh !important;
-	min-height: 100vh !important;
-}
 a{
 	text-decoration: none !important;
 }
@@ -2999,6 +2991,9 @@ input:focus{
 }
 button:focus{
 	outline: 0 !important;
+}
+.width100{
+	width:100%;
 }
 
 

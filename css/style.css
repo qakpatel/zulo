@@ -56,7 +56,6 @@ html{
 	  border-color: white;
 	  border-width:1px;
 	  border-radius: 20px;
-	
 	  padding-left:10px; 
 	  padding-right:10px;
 	}
@@ -90,19 +89,6 @@ html{
 	  font-family: Arial, Helvetica, sans-serif;
 	  /* font-weight: 500; */
 	}
-	a:active {
-	  color:#EF4136 !important;
-	  text-decoration: underline;
-	  text-decoration-color:#EF4136;
-  }
-  
-  a[tabindex]:focus {
-	color:#EF4136 !important;
-	  outline: none;
-	  text-decoration: underline;
-	  text-decoration-color:#EF4136;
-	  
-  }
   body{
 	/* padding-top: 55px; */
 	background-color: black !important;
@@ -292,8 +278,8 @@ html{
   .images{
 	width: 300px;
 	height: 187.5px;
-	padding: 25px;
-	border-radius: 40px;
+  border-radius: 40px;
+  padding:15px;
 	cursor: pointer;
 	object-fit:cover;
 	float: left;
@@ -530,7 +516,12 @@ p.h6{
     color: black!important;
     font-size: 14px!important;
     margin-left: -75px!important;
-    
+    font-weight: 600!important;
+}
+.home-foot{
+  color: white!important;
+    font-size: 14px!important;
+    margin-left: -75px!important;
     font-weight: 600!important;
 }
 h5.top{
@@ -576,10 +567,6 @@ h5.top{
     margin-bottom: 10px;
 }
 }
-
-  .body {
-      background-color: black;
-  }
   .material-icons{
     font-family: 'Material Icons';
     font-weight: normal;
@@ -622,30 +609,30 @@ a.pay{
   padding-top: 20px;
 }
 .login100-form-btn {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    line-height: 0.5;
-    color: #fff;
-    text-transform: uppercase;
-    width: 69%;
-    height: 38px;
-    border-radius: 16px;
-    background: #ef4136;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1px;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    position: relative;
-    left: 100px;
-    top: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      line-height: 0.5;
+      color: #fff;
+      text-transform: uppercase;
+      width: 69%;
+      height: 38px;
+      border-radius: 16px;
+      background: #ef4136;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1px;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      position: relative;
+      left: 100px;
+      top: 100px;
   }
   
   .login100-form-btn:hover {
@@ -724,13 +711,25 @@ h4.cards{
    .genres{
     float: right;
     position: absolute;
-    right: 30px;
-    border-bottom: 1px solid white;
+    right: 110px;
+    /* border-bottom: 1px solid white; */
+   }
+   .edit-list{
+    float: right;
+    position: absolute;
+    right: 110px;
    }
    .genres select{
     color: white;
     background-color: black;
     border: none;
+   }
+  .edit-list span{
+     font-weight: bold;
+     font-size: 12px;
+     font-family: sans-serif;
+     color:white;
+     cursor: pointer;
    }
    .genres select:focus{
        outline: 0;
@@ -784,8 +783,14 @@ h4.cards{
 .recent{
     position: absolute;
     left:100px;
-    top:190px;
+    top:163px;
     font-size: 14px;
+}
+.my-list{
+    position: absolute;
+    left:86px;
+    top:140px;
+    font-size: 28px;
 }
 .series-releases{
     position: absolute;
@@ -805,23 +810,6 @@ h4.cards{
     height: 500px;
     object-fit:cover;
     object-position:50% 50%;
-   }
-   .genres{
-    float: right;
-    position: absolute;
-    right: 30px;
-    border-bottom: 1px solid white;
-   }
-   .genres select{
-    color: white;
-    background-color: black;
-    border: none;
-   }
-   .genres select:focus{
-       outline: 0;
-   }
-   .genres select option{
-       border: none;
    }
    .movies-bollywood-box{
     background-image: url("../images/image9.jpg");
@@ -912,4 +900,33 @@ h4.cards{
   span.cards{
     font-size: 14px;
     font-weight: 700;
+  }
+  /* a:active {
+	  color:#EF4136 !important;
+	  text-decoration: underline;
+	  text-decoration-color:#EF4136;
+  }
+  
+  a[tabindex]:focus {
+	color:#EF4136 !important;
+	  outline: none;
+	  text-decoration: underline;
+	  text-decoration-color:#EF4136;
+	  
+  } */
+  .navbar-nav li a:hover {
+    color:#EF4136 !important;
+    outline: none;
+  }
+  .active {
+    color:#EF4136 !important;
+    outline: none;
+  }
+  .col-3{
+    padding-left: 57px !important;
+    padding-right: 0px !important;
+    max-width: 23% !important;
+  }
+  .static-content-header li a{
+    color:black !important;
   }

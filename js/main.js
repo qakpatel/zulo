@@ -55,3 +55,8 @@
     
 
 })(jQuery);
+
+$('.nav-link').on('click', function() {
+    $('a').removeClass('active');
+    $(this).closest('a').addClass('active');
+  })

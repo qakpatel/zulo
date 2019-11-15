@@ -51,25 +51,19 @@
 }
 .navbar {
   overflow: hidden;
-  background-color: #e6e6e6;  
-
+  background-color: #e6e6e6; 
+  position: absolute !important; 
   bottom: 0;
   left: 0;
-  padding: .5rem 8rem;
+  padding: .3rem 6rem !important;
   width: 53%;
-}
-#myNavbar {
-  position: absolute;
-  padding: .5rem 8rem;
-  background-color: #e9e9e9;
-    background-image: -webkit-linear-gradient(30deg, #80808047 90%, white 50%);
+  background-image: -webkit-linear-gradient(30deg, #80808047 90%, white 50%);
 }
 .navbar a {
   float: left;
-  
+  padding-left: .4rem;
   color: black;
   text-align: center;
-  
   text-decoration: none;
   font-size: 12px;
 }
@@ -78,20 +72,17 @@
   background-color: #ddd;
   color: black;
 }
-
-
-
 .navbar .icon {
   display: none;
 }
-
+/* 
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
     display: block;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   .navbar.responsive .icon {
@@ -137,18 +128,16 @@
   text-align: center;
   font-size: 18px;
 }
-img.middle {
- 
+.middle {
   width: 62%;
   float: right;
 }
-img {
+.logo {
   vertical-align: middle;
   border-style: none;
   width: 13%;
 }
 body, html {
-	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
 }
 
@@ -326,7 +315,7 @@ iframe {
 #exampleInputFname1
 {
   display: block;
-  width: 163%;
+  width: 100%;
   height: calc(1.5em + .75rem + 2px);
   padding: .375rem .75rem;
   font-size: 1rem;
@@ -342,7 +331,7 @@ iframe {
 #exampleInputEmail1
 {
   display: block;
-  width: 163%;
+  width: 100%;
   height: calc(1.5em + .75rem + 2px);
   padding: .375rem .75rem;
   font-size: 1rem;
@@ -358,7 +347,7 @@ iframe {
 #exampleInputPassword1
 {
   display: block;
-  width: 163%;
+  width: 100%;
   height: calc(1.5em + .75rem + 2px);
   padding: .375rem .75rem;
   font-size: 1rem;
@@ -432,7 +421,7 @@ iframe {
   padding: 15px;
   background: white;
   background-color: #FFF;
-background-image: -webkit-linear-gradient(30deg, #f7f7f7 60%, #EA4E34 50%);
+background-image: -webkit-linear-gradient(30deg, #f7f7f7 60%, #EA4E34 40%);
 
   position: relative;
   z-index: 1;
@@ -441,7 +430,6 @@ background-image: -webkit-linear-gradient(30deg, #f7f7f7 60%, #EA4E34 50%);
 
 
 .wrap-login100 {
-  width: 450px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: #fff;
   border-radius: 3px;
@@ -634,7 +622,6 @@ background-image: -webkit-linear-gradient(30deg, #f7f7f7 60%, #EA4E34 50%);
   line-height: 1.5;
   color: #fff;
   text-transform: uppercase;
-
   width: 35%;
   height: 37px;
   border-radius: 16px;
@@ -647,7 +634,6 @@ background-image: -webkit-linear-gradient(30deg, #f7f7f7 60%, #EA4E34 50%);
   justify-content: center;
   align-items: center;
   padding: 0 25px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -805,13 +791,82 @@ background-image: -webkit-linear-gradient(30deg, #f7f7f7 60%, #EA4E34 50%);
     background: #dd4b39;
     padding: 0.1em 0.1em;
     }
-    .fa-facebook{
-      background: #3B5998;
-      color: #FFFFFF;
-      padding: 0.05em 0.3em;
-      }
-      .social-login{
-       position: absolute;
-       left:55%;
+.fa-facebook{
+  background: #3B5998;
+  color: #FFFFFF;
+  padding: 0.05em 0.3em;
+  }
+  .social-login{
+    position: absolute;
+    left:52%;
+    padding:4px;
+  }
+  .social-login img{
+    padding-left: 4px;
+    width:35px;
+    height:35px;
+  }
+  .login100-form-btn a img{
+    width:14px;
+    height:14px;
+    margin-left:-6px;
+  }
 
-      }
+  /****************************************Media Query ***************************************************/
+  @media (max-width: 480px) {
+    .container-login100 {
+      background-image: -webkit-linear-gradient(30deg, #f7f7f7 75%, #EA4E34 25%);
+    }
+    .wrap-logo{
+     margin-top: -140px;
+    }
+    .wrap-logo .center{
+      left:-65px;
+    }
+    .bottomright{
+     color:black;right: 6px;
+    }
+    .login100-form-btn a{
+      padding-left:11px;
+    }
+    .login100-form-btn a img{
+      width:14px;
+      height:14px;
+      margin-left:-18px;
+    }
+    .navbar{
+     padding:.3rem 4rem !important;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px)  {
+  .wrap768{
+    position: absolute;
+    width: 500px;
+    right: 105px;
+  }
+  .center{
+    left: 71px;
+    top: -180px;
+  }
+  .bottomright{
+    color:black;
+    right: 40px;
+  }
+  .bottomright a{
+    font-size:16px;
+    font-weight: 600;
+  }
+  .navbar{
+    width: 72%;
+  }
+}
+  @media (max-width: 1024px) {
+    .login100-form-btn a img{
+      width:14px;
+      height:14px;
+      margin-left:-18px;
+    }
+    .login100-form-btn{
+      width:41%;
+    }
+  }
